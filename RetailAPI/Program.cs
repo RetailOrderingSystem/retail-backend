@@ -18,6 +18,7 @@ builder.Services.AddJwtAuthentication(builder.Configuration);
 builder.Services.AddCorsPolicy();
 builder.Services.AddSwaggerService();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddModule2Services();
 
 // Bind Config Sections
 builder.Services.Configure<EmailSettings>(
