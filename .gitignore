@@ -1,8 +1,3 @@
-# Build output 
-bin/ 
-obj/ 
-.vs/ 
-Logs/ 
-*.user 
-*.suo 
-appsettings.Development.json 
+bin/
+obj/
+.vs/
