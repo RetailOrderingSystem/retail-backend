@@ -39,7 +39,7 @@ namespace RetailAPI.Repositories
                 .Include(o => o.OrderItems).ThenInclude(oi => oi.Product)
                 .Include(o => o.Payment)
                 .Include(o => o.Coupon)
-                .OrderByDescending(o => o.OrderDate)
+                .OrderByDescending(o => o.CreatedAt)
                 .ToListAsync();
 
         public async Task<Order?> GetOrderByIdAsync(int id)

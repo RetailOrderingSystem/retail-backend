@@ -49,8 +49,10 @@ namespace RetailAPI.Services
 
             _context.Payments.Add(payment);
 
-            // Update order status
-            order.Status = "Processing";
+            // Update order status to a valid enum value
+            order.Status = OrderStatus.Preparing;
+            order.UpdatedAt = DateTime.UtcNow;
+
             await _context.SaveChangesAsync();
 
             return (true, "Payment recorded.", MapToDto(payment));

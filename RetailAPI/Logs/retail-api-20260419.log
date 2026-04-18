@@ -1,0 +1,24 @@
+2026-04-19 00:05:22.717 +05:30 [INF] Retail API started successfully.
+2026-04-19 00:05:23.205 +05:30 [WRN] The WebRootPath was not found: D:\.Net-Web\RetailAPI\RetailAPI\wwwroot. Static files may be unavailable.
+2026-04-19 00:06:21.946 +05:30 [INF] Login OTP generated for anu18balu@gmail.com: ***923
+2026-04-19 00:06:22.018 +05:30 [INF] 📧 Sending email via SMTP to anu18balu@gmail.com using host smtp.gmail.com:587
+2026-04-19 00:06:26.444 +05:30 [INF] ✅ Email sent successfully to anu18balu@gmail.com via SMTP
+2026-04-19 00:07:18.759 +05:30 [INF] 📧 Sending email via SMTP to anu18balu@gmail.com using host smtp.gmail.com:587
+2026-04-19 00:07:23.546 +05:30 [INF] ✅ Email sent successfully to anu18balu@gmail.com via SMTP
+2026-04-19 00:08:05.515 +05:30 [INF] Attempting email verification for anu18balu@gmail.com with token: eyJ***YME
+2026-04-19 00:17:06.992 +05:30 [INF] Retail API started successfully.
+2026-04-19 00:17:07.396 +05:30 [WRN] The WebRootPath was not found: D:\.Net-Web\RetailAPI\RetailAPI\wwwroot. Static files may be unavailable.
+2026-04-19 00:20:52.508 +05:30 [INF] Login OTP generated for anu18balu@gmail.com: ***408
+2026-04-19 00:20:52.545 +05:30 [INF] 📧 Sending email via SMTP to anu18balu@gmail.com using host smtp.gmail.com:587
+2026-04-19 00:20:56.693 +05:30 [INF] ✅ Email sent successfully to anu18balu@gmail.com via SMTP
+2026-04-19 00:21:17.743 +05:30 [INF] 📧 Sending email via SMTP to anu18balu@gmail.com using host smtp.gmail.com:587
+2026-04-19 00:21:21.738 +05:30 [INF] ✅ Email sent successfully to anu18balu@gmail.com via SMTP
+2026-04-19 00:21:46.193 +05:30 [INF] Attempting email verification for anu18balu@gmail.com with token: eyJ***dYc
+2026-04-19 00:24:11.136 +05:30 [INF] Attempting email verification for anu18balu@gmail.com with token: ***408
+2026-04-19 00:30:01.033 +05:30 [INF] Retail API started successfully.
+2026-04-19 00:30:01.463 +05:30 [WRN] The WebRootPath was not found: D:\.Net-Web\RetailAPI\RetailAPI\wwwroot. Static files may be unavailable.
+2026-04-19 00:31:36.010 +05:30 [INF] EmailVerification saved. Id=1, UserId=3, TokenMasked=***618, ExpiresAt="2026-04-19T19:01:35.9613479Z"
+2026-04-19 00:31:36.047 +05:30 [INF] 📧 Sending email via SMTP to anuvarshinibalu18@gmail.com using host smtp.gmail.com:587
+2026-04-19 00:31:40.022 +05:30 [INF] ✅ Email sent successfully to anuvarshinibalu18@gmail.com via SMTP
+2026-04-19 00:32:30.484 +05:30 [INF] Attempting email verification for anuvarshinibalu18@gmail.com with token: ***618
+2026-04-19 00:32:30.541 +05:30 [INF] Email verified for anuvarshinibalu18@gmail.com

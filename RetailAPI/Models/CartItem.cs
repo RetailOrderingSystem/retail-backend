@@ -12,8 +12,6 @@ namespace RetailAPI.Models
         public int CartId { get; set; }
         public int ProductId { get; set; }
         public int Quantity { get; set; } = 1;
-
-        [Column(TypeName = "decimal(10,2)")]
         public decimal UnitPrice { get; set; }
 
         public DateTime AddedAt { get; set; } = DateTime.UtcNow;
