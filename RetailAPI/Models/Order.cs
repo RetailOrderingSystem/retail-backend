@@ -5,6 +5,16 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RetailAPI.Models
 {
+    public enum OrderStatus
+    {
+        Pending,
+        Confirmed,
+        Preparing,
+        OutForDelivery,
+        Delivered,
+        Cancelled
+    }
+
     public class Order
     {
         [Key]
@@ -12,28 +22,24 @@ namespace RetailAPI.Models
 
         public int UserId { get; set; }
 
-        [MaxLength(50)]
-        public string Status { get; set; } = "Pending"; // Pending, Confirmed, Preparing, Delivered, Cancelled
+        [Required, MaxLength(500)]
+        public string DeliveryAddress { get; set; } = string.Empty;
 
-        [Column(TypeName = "decimal(10,2)")]
         public decimal TotalAmount { get; set; }
+        public decimal DeliveryFee { get; set; } = 30;
+        public decimal Discount { get; set; } = 0;
 
-        [Column(TypeName = "decimal(10,2)")]
-        public decimal DiscountAmount { get; set; } = 0;
+        public OrderStatus Status { get; set; } = OrderStatus.Pending;
 
-        [Column(TypeName = "decimal(10,2)")]
-        public decimal FinalAmount { get; set; }
+        [MaxLength(200)]
+        public string? Notes { get; set; }
 
-        [MaxLength(500)]
-        public string? DeliveryAddress { get; set; }
-
-        public int? CouponId { get; set; }
-
-        public DateTime OrderDate { get; set; } = DateTime.UtcNow;
-        public DateTime? DeliveredAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
         [ForeignKey("UserId")]
         public virtual User User { get; set; } = null!;
+        public int? CouponId { get; set; }
 
         public virtual ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
         public virtual Payment? Payment { get; set; }
