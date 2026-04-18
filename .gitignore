@@ -1,0 +1,8 @@
+# Build output 
+bin/ 
+obj/ 
+.vs/ 
+Logs/ 
+*.user 
+*.suo 
+appsettings.Development.json 
