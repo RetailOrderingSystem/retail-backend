@@ -1,4 +1,3 @@
-using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -8,6 +7,9 @@ using Microsoft.OpenApi.Models;
 using RetailAPI.Config;
 using RetailAPI.Data;
 using RetailAPI.Helpers;
+using RetailAPI.Repositories;
+using RetailAPI.Services;
+using System.Text;
 
 namespace RetailAPI.Extensions
 {
@@ -20,6 +22,16 @@ namespace RetailAPI.Extensions
             services.AddDbContext<AppDbContext>(options =>
                 options.UseMySql(connectionString,
                     ServerVersion.AutoDetect(connectionString)));
+            return services;
+        }
+        public static IServiceCollection AddModule2Services(this IServiceCollection services)
+        {
+            services.AddScoped<ProductRepository>();
+            services.AddScoped<CategoryRepository>();
+            services.AddScoped<InventoryRepository>();
+            services.AddScoped<ProductService>();
+            services.AddScoped<CategoryService>();
+            services.AddScoped<InventoryService>();
             return services;
         }
 
