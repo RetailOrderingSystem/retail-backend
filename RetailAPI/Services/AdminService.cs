@@ -80,7 +80,11 @@ namespace RetailAPI.Services
             var order = await _adminRepo.GetOrderByIdAsync(orderId);
             if (order == null) return false;
 
-            order.Status = status;
+            if (!Enum.TryParse<OrderStatus>(status, true, out var parsedStatus))
+                return false;
+
+            order.Status = parsedStatus;
+            order.UpdatedAt = DateTime.UtcNow;
             await _adminRepo.UpdateOrderAsync(order);
             return true;
         }
@@ -91,10 +95,10 @@ namespace RetailAPI.Services
             UserName = o.User?.FullName ?? "",
             UserEmail = o.User?.Email ?? "",
             TotalAmount = o.TotalAmount,
-            Status = o.Status,
+            Status = o.Status.ToString(),
             PaymentStatus = o.Payment?.Status,
             PaymentMethod = o.Payment?.Method,
-            CreatedAt = o.OrderDate,
+            CreatedAt = o.CreatedAt,
             Items = o.OrderItems?.Select(oi => new AdminOrderItemDto
             {
                 ProductName = oi.Product?.Name ?? "",
