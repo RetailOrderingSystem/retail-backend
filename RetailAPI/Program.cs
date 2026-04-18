@@ -1,7 +1,9 @@
-﻿using RetailAPI.Extensions;
-using RetailAPI.Middleware;
+﻿using RetailAPI.Config;
+using RetailAPI.Extensions;
 using RetailAPI.Logs;
-using RetailAPI.Config;
+using RetailAPI.Middleware;
+using RetailAPI.Repositories;
+using RetailAPI.Services;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +20,16 @@ builder.Services.AddJwtAuthentication(builder.Configuration);
 builder.Services.AddCorsPolicy();
 builder.Services.AddSwaggerService();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddHttpClient();
+
+// Repositories
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+// Services
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
+
+
 
 // Bind Config Sections
 builder.Services.Configure<EmailSettings>(
