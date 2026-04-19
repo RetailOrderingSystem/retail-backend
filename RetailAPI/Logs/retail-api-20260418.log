@@ -15,3 +15,130 @@
 2026-04-18 11:30:14.212 +05:30 [WRN] The WebRootPath was not found: D:\.Net-Web\RetailAPI\RetailAPI\wwwroot. Static files may be unavailable.
 2026-04-18 11:32:49.856 +05:30 [INF] Retail API started successfully.
 2026-04-18 11:32:50.210 +05:30 [WRN] The WebRootPath was not found: D:\.Net-Web\RetailAPI\RetailAPI\wwwroot. Static files may be unavailable.
+2026-04-18 13:50:29.939 +05:30 [INF] Retail API started successfully.
+2026-04-18 13:50:30.451 +05:30 [WRN] The WebRootPath was not found: C:\Hcl_dir\Retail_store\retail-backend\RetailAPI\wwwroot. Static files may be unavailable.
+2026-04-18 13:51:19.538 +05:30 [ERR] Failed to send email to john@example.com
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at RetailAPI.Services.EmailService.SendEmailAsync(String toEmail, String subject, String body) in C:\Hcl_dir\Retail_store\retail-backend\RetailAPI\Services\EmailService.cs:line 88
+2026-04-18 13:55:21.259 +05:30 [INF] Retail API started successfully.
+2026-04-18 13:55:21.426 +05:30 [WRN] The WebRootPath was not found: C:\Hcl_dir\Retail_store\retail-backend\RetailAPI\wwwroot. Static files may be unavailable.
+2026-04-18 13:56:08.529 +05:30 [ERR] Failed to send email to madhubalan009r@gmail.com
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at RetailAPI.Services.EmailService.SendEmailAsync(String toEmail, String subject, String body) in C:\Hcl_dir\Retail_store\retail-backend\RetailAPI\Services\EmailService.cs:line 88
+2026-04-18 14:01:50.060 +05:30 [ERR] Failed to send email to madhubalan009r@gmail.com
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at RetailAPI.Services.EmailService.SendEmailAsync(String toEmail, String subject, String body) in C:\Hcl_dir\Retail_store\retail-backend\RetailAPI\Services\EmailService.cs:line 88
+2026-04-18 14:12:15.378 +05:30 [INF] Retail API started successfully.
+2026-04-18 14:12:15.508 +05:30 [WRN] The WebRootPath was not found: C:\Hcl_dir\Retail_store\retail-backend\RetailAPI\wwwroot. Static files may be unavailable.
+2026-04-18 14:14:44.843 +05:30 [ERR] Failed to send email to madhubalan009r@gmail.com
+System.Net.Mail.SmtpException: Failure sending mail.
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToAsyncResult.End(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.InitializeConnectionCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at RetailAPI.Services.EmailService.SendEmailAsync(String toEmail, String subject, String body) in C:\Hcl_dir\Retail_store\retail-backend\RetailAPI\Services\EmailService.cs:line 88
+2026-04-18 14:16:30.177 +05:30 [ERR] Failed to send email to 717822y127@kce.ac.in
+System.Net.Mail.SmtpException: Failure sending mail.
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToAsyncResult.End(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.InitializeConnectionCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at RetailAPI.Services.EmailService.SendEmailAsync(String toEmail, String subject, String body) in C:\Hcl_dir\Retail_store\retail-backend\RetailAPI\Services\EmailService.cs:line 88
+2026-04-18 14:23:24.563 +05:30 [INF] Retail API started successfully.
+2026-04-18 14:23:24.707 +05:30 [WRN] The WebRootPath was not found: C:\Hcl_dir\Retail_store\retail-backend\RetailAPI\wwwroot. Static files may be unavailable.
+2026-04-18 14:24:29.751 +05:30 [INF] 📧 Sending via SMTP: sandbox.smtp.mailtrap.io:2525 as 899f6b1350f3d5
+2026-04-18 14:26:36.210 +05:30 [ERR] Failed to send email to ragulmadhu5656@gmail.com
+System.Net.Mail.SmtpException: Failure sending mail.
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.TaskToAsyncResult.End(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Mail.SmtpConnection.ConnectAndHandshakeAsyncResult.InitializeConnectionCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SmtpClient.ConnectCallback(IAsyncResult result)
+   --- End of inner exception stack trace ---
+   at RetailAPI.Services.EmailService.SendEmailAsync(String toEmail, String subject, String body) in C:\Hcl_dir\Retail_store\retail-backend\RetailAPI\Services\EmailService.cs:line 92
+2026-04-18 14:35:17.235 +05:30 [INF] Retail API started successfully.
+2026-04-18 14:35:17.379 +05:30 [WRN] The WebRootPath was not found: C:\Hcl_dir\Retail_store\retail-backend\RetailAPI\wwwroot. Static files may be unavailable.
+2026-04-18 14:36:00.738 +05:30 [INF] 📧 Sending email via Mailtrap API to madhubalan009r@gmail.com
+2026-04-18 14:36:02.161 +05:30 [INF] ✅ Email sent successfully to madhubalan009r@gmail.com
+2026-04-18 14:37:13.214 +05:30 [ERR] Error during OTP verification for madhubalan009r@gmail.com
+System.InvalidOperationException: JWT SecretKey not configured.
+   at RetailAPI.Services.AuthService.GenerateJwtToken(User user) in C:\Hcl_dir\Retail_store\retail-backend\RetailAPI\Services\AuthService.cs:line 218
+   at RetailAPI.Services.AuthService.VerifyOtpAsync(VerifyOtpDto dto, String ipAddress, String userAgent) in C:\Hcl_dir\Retail_store\retail-backend\RetailAPI\Services\AuthService.cs:line 176
+   at RetailAPI.Controllers.AuthController.VerifyOtp(VerifyOtpDto dto) in C:\Hcl_dir\Retail_store\retail-backend\RetailAPI\Controllers\AuthController.cs:line 98
+2026-04-18 14:42:08.352 +05:30 [INF] Retail API started successfully.
+2026-04-18 14:42:08.474 +05:30 [WRN] The WebRootPath was not found: C:\Hcl_dir\Retail_store\retail-backend\RetailAPI\wwwroot. Static files may be unavailable.
+2026-04-18 14:43:06.295 +05:30 [INF] 📧 Sending email via Mailtrap API to madhubalan009r@gmail.com
+2026-04-18 14:43:06.504 +05:30 [ERR] Exception while sending email to madhubalan009r@gmail.com
+System.Net.Http.HttpRequestException: No such host is known. (sandbox.api.mailtrap.io:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionWaiter`1.WaitForConnectionWithTelemetryAsync(HttpRequestMessage request, HttpConnectionPool pool, Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|4_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at RetailAPI.Services.EmailService.SendEmailAsync(String toEmail, String subject, String body) in C:\Hcl_dir\Retail_store\retail-backend\RetailAPI\Services\EmailService.cs:line 110
+2026-04-18 14:44:18.751 +05:30 [INF] 📧 Sending email via Mailtrap API to madhubalan009r@gmail.com
+2026-04-18 14:44:20.138 +05:30 [INF] ✅ Email sent successfully to madhubalan009r@gmail.com
+2026-04-18 14:44:37.671 +05:30 [INF] 📧 Sending email via Mailtrap API to madhubalan009r@gmail.com
+2026-04-18 14:44:38.033 +05:30 [INF] ✅ Email sent successfully to madhubalan009r@gmail.com2026-04-18 23:48:08.533 +05:30 [INF] Retail API started successfully.
+2026-04-18 23:48:08.819 +05:30 [WRN] The WebRootPath was not found: D:\.Net-Web\RetailAPI\RetailAPI\wwwroot. Static files may be unavailable.
+2026-04-18 23:48:43.870 +05:30 [INF] 📧 Sending email via Mailtrap API to anu18balu@gmail.com
+2026-04-18 23:48:45.286 +05:30 [INF] ✅ Email sent successfully to anu18balu@gmail.com via Mailtrap API
+2026-04-18 23:55:42.870 +05:30 [INF] Retail API started successfully.
+2026-04-18 23:55:43.187 +05:30 [WRN] The WebRootPath was not found: D:\.Net-Web\RetailAPI\RetailAPI\wwwroot. Static files may be unavailable.
+2026-04-18 23:57:37.047 +05:30 [INF] 📧 Sending email via SMTP to anu18balu@gmail.com using host smtp.gmail.com:587
+2026-04-18 23:57:41.841 +05:30 [INF] ✅ Email sent successfully to anu18balu@gmail.com via SMTP
+2026-04-18 23:58:19.745 +05:30 [INF] 📧 Sending email via SMTP to anu18balu@gmail.com using host smtp.gmail.com:587
+2026-04-18 23:58:24.157 +05:30 [INF] ✅ Email sent successfully to anu18balu@gmail.com via SMTP
