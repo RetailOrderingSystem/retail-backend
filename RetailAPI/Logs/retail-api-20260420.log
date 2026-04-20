@@ -1,0 +1,208 @@
+2026-04-20 09:02:59.688 +05:30 [INF] Retail API started successfully.
+2026-04-20 09:03:00.446 +05:30 [WRN] The WebRootPath was not found: C:\Users\pjeev\HCL Projects\Retail-App\retail-backend\RetailAPI\wwwroot. Static files may be unavailable.
+2026-04-20 09:18:31.464 +05:30 [INF] Retail API started successfully.
+2026-04-20 09:18:31.965 +05:30 [WRN] The WebRootPath was not found: C:\Users\pjeev\HCL Projects\Retail-App\retail-backend\RetailAPI\wwwroot. Static files may be unavailable.
+2026-04-20 09:31:54.234 +05:30 [INF] EmailVerification saved. Id=1, UserId=2, TokenMasked=***897, ExpiresAt="2026-04-21T04:01:54.0999048Z"
+2026-04-20 09:31:54.365 +05:30 [INF] 📧 Sending email via SMTP to pjeevitha370@gmail.com using host smtp.gmail.com:587
+2026-04-20 09:31:58.396 +05:30 [INF] ✅ Email sent successfully to pjeevitha370@gmail.com via SMTP
+2026-04-20 09:35:43.533 +05:30 [INF] Attempting email verification for pjeevitha370@gmail.com with token: ***897
+2026-04-20 09:35:43.741 +05:30 [INF] Email verified for pjeevitha370@gmail.com
+2026-04-20 09:35:55.012 +05:30 [INF] Login OTP generated for pjeevitha370@gmail.com: ***044
+2026-04-20 09:35:55.041 +05:30 [INF] 📧 Sending email via SMTP to pjeevitha370@gmail.com using host smtp.gmail.com:587
+2026-04-20 09:36:00.607 +05:30 [INF] ✅ Email sent successfully to pjeevitha370@gmail.com via SMTP
+2026-04-20 09:36:21.603 +05:30 [INF] 📧 Sending email via SMTP to pjeevitha370@gmail.com using host smtp.gmail.com:587
+2026-04-20 09:36:26.823 +05:30 [INF] ✅ Email sent successfully to pjeevitha370@gmail.com via SMTP
+2026-04-20 09:42:27.923 +05:30 [ERR] Unhandled exception: Unable to resolve service for type 'RetailAPI.Services.CartService' while attempting to activate 'RetailAPI.Controllers.CartController'.
+System.InvalidOperationException: Unable to resolve service for type 'RetailAPI.Services.CartService' while attempting to activate 'RetailAPI.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method918(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at RetailAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\pjeev\HCL Projects\Retail-App\retail-backend\RetailAPI\Middleware\ExceptionMiddleware.cs:line 25
+2026-04-20 09:42:42.123 +05:30 [ERR] Unhandled exception: Unable to resolve service for type 'RetailAPI.Services.CartService' while attempting to activate 'RetailAPI.Controllers.CartController'.
+System.InvalidOperationException: Unable to resolve service for type 'RetailAPI.Services.CartService' while attempting to activate 'RetailAPI.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method918(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at RetailAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\pjeev\HCL Projects\Retail-App\retail-backend\RetailAPI\Middleware\ExceptionMiddleware.cs:line 25
+2026-04-20 09:47:43.562 +05:30 [ERR] Unhandled exception: Unable to resolve service for type 'RetailAPI.Services.CartService' while attempting to activate 'RetailAPI.Controllers.CartController'.
+System.InvalidOperationException: Unable to resolve service for type 'RetailAPI.Services.CartService' while attempting to activate 'RetailAPI.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method918(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at RetailAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\pjeev\HCL Projects\Retail-App\retail-backend\RetailAPI\Middleware\ExceptionMiddleware.cs:line 25
+2026-04-20 09:51:01.094 +05:30 [ERR] Unhandled exception: Unable to resolve service for type 'RetailAPI.Services.CartService' while attempting to activate 'RetailAPI.Controllers.CartController'.
+System.InvalidOperationException: Unable to resolve service for type 'RetailAPI.Services.CartService' while attempting to activate 'RetailAPI.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method918(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at RetailAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\pjeev\HCL Projects\Retail-App\retail-backend\RetailAPI\Middleware\ExceptionMiddleware.cs:line 25
+2026-04-20 09:57:54.075 +05:30 [INF] Login OTP generated for pjeevitha370@gmail.com: ***140
+2026-04-20 09:57:54.122 +05:30 [INF] 📧 Sending email via SMTP to pjeevitha370@gmail.com using host smtp.gmail.com:587
+2026-04-20 09:57:59.555 +05:30 [INF] ✅ Email sent successfully to pjeevitha370@gmail.com via SMTP
+2026-04-20 09:58:23.229 +05:30 [INF] 📧 Sending email via SMTP to pjeevitha370@gmail.com using host smtp.gmail.com:587
+2026-04-20 09:58:28.456 +05:30 [INF] ✅ Email sent successfully to pjeevitha370@gmail.com via SMTP
+2026-04-20 09:59:25.106 +05:30 [ERR] Unhandled exception: Unable to resolve service for type 'RetailAPI.Services.CartService' while attempting to activate 'RetailAPI.Controllers.CartController'.
+System.InvalidOperationException: Unable to resolve service for type 'RetailAPI.Services.CartService' while attempting to activate 'RetailAPI.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method918(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at RetailAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\pjeev\HCL Projects\Retail-App\retail-backend\RetailAPI\Middleware\ExceptionMiddleware.cs:line 25
+2026-04-20 09:59:29.659 +05:30 [ERR] Unhandled exception: Unable to resolve service for type 'RetailAPI.Services.CartService' while attempting to activate 'RetailAPI.Controllers.CartController'.
+System.InvalidOperationException: Unable to resolve service for type 'RetailAPI.Services.CartService' while attempting to activate 'RetailAPI.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method918(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at RetailAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\pjeev\HCL Projects\Retail-App\retail-backend\RetailAPI\Middleware\ExceptionMiddleware.cs:line 25
+2026-04-20 09:59:34.911 +05:30 [ERR] Unhandled exception: Unable to resolve service for type 'RetailAPI.Services.CartService' while attempting to activate 'RetailAPI.Controllers.CartController'.
+System.InvalidOperationException: Unable to resolve service for type 'RetailAPI.Services.CartService' while attempting to activate 'RetailAPI.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method918(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at RetailAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\pjeev\HCL Projects\Retail-App\retail-backend\RetailAPI\Middleware\ExceptionMiddleware.cs:line 25
+2026-04-20 09:59:40.657 +05:30 [ERR] Unhandled exception: Unable to resolve service for type 'RetailAPI.Services.CartService' while attempting to activate 'RetailAPI.Controllers.CartController'.
+System.InvalidOperationException: Unable to resolve service for type 'RetailAPI.Services.CartService' while attempting to activate 'RetailAPI.Controllers.CartController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method918(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at RetailAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\pjeev\HCL Projects\Retail-App\retail-backend\RetailAPI\Middleware\ExceptionMiddleware.cs:line 25
+2026-04-20 10:09:34.761 +05:30 [INF] Retail API started successfully.
+2026-04-20 10:09:35.374 +05:30 [WRN] The WebRootPath was not found: C:\Users\pjeev\HCL Projects\Retail-App\retail-backend\RetailAPI\wwwroot. Static files may be unavailable.
+2026-04-20 10:13:15.326 +05:30 [ERR] Unhandled exception: Unable to resolve service for type 'RetailAPI.Services.OrderService' while attempting to activate 'RetailAPI.Controllers.OrderController'.
+System.InvalidOperationException: Unable to resolve service for type 'RetailAPI.Services.OrderService' while attempting to activate 'RetailAPI.Controllers.OrderController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method408(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at RetailAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\pjeev\HCL Projects\Retail-App\retail-backend\RetailAPI\Middleware\ExceptionMiddleware.cs:line 25
+2026-04-20 10:13:19.059 +05:30 [ERR] Unhandled exception: Unable to resolve service for type 'RetailAPI.Services.OrderService' while attempting to activate 'RetailAPI.Controllers.OrderController'.
+System.InvalidOperationException: Unable to resolve service for type 'RetailAPI.Services.OrderService' while attempting to activate 'RetailAPI.Controllers.OrderController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method408(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at RetailAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\pjeev\HCL Projects\Retail-App\retail-backend\RetailAPI\Middleware\ExceptionMiddleware.cs:line 25
+2026-04-20 10:15:05.122 +05:30 [ERR] Unhandled exception: Unable to resolve service for type 'RetailAPI.Services.OrderService' while attempting to activate 'RetailAPI.Controllers.OrderController'.
+System.InvalidOperationException: Unable to resolve service for type 'RetailAPI.Services.OrderService' while attempting to activate 'RetailAPI.Controllers.OrderController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method408(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at RetailAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\pjeev\HCL Projects\Retail-App\retail-backend\RetailAPI\Middleware\ExceptionMiddleware.cs:line 25
+2026-04-20 10:16:17.225 +05:30 [INF] Retail API started successfully.
+2026-04-20 10:16:17.570 +05:30 [WRN] The WebRootPath was not found: C:\Users\pjeev\HCL Projects\Retail-App\retail-backend\RetailAPI\wwwroot. Static files may be unavailable.
+2026-04-20 10:29:21.697 +05:30 [INF] Retail API started successfully.
+2026-04-20 10:29:22.294 +05:30 [WRN] The WebRootPath was not found: C:\Users\pjeev\HCL Projects\Retail-App\retail-backend\RetailAPI\wwwroot. Static files may be unavailable.
+2026-04-20 11:23:28.832 +05:30 [INF] Login OTP generated for pjeevitha370@gmail.com: ***422
+2026-04-20 11:23:29.111 +05:30 [INF] 📧 Sending email via SMTP to pjeevitha370@gmail.com using host smtp.gmail.com:587
+2026-04-20 11:23:34.729 +05:30 [INF] ✅ Email sent successfully to pjeevitha370@gmail.com via SMTP
+2026-04-20 11:23:50.855 +05:30 [INF] 📧 Sending email via SMTP to pjeevitha370@gmail.com using host smtp.gmail.com:587
+2026-04-20 11:23:54.337 +05:30 [INF] ✅ Email sent successfully to pjeevitha370@gmail.com via SMTP
+2026-04-20 11:49:43.278 +05:30 [INF] Retail API started successfully.
+2026-04-20 11:49:43.726 +05:30 [WRN] The WebRootPath was not found: C:\Users\pjeev\HCL Projects\Retail-App\retail-backend\RetailAPI\wwwroot. Static files may be unavailable.

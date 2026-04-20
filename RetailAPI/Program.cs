@@ -26,7 +26,10 @@ builder.Services.AddModule2Services();
 builder.Services.AddHttpClient();
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
-
+builder.Services.AddScoped<CartRepository>();
+builder.Services.AddScoped<CartService>();
+builder.Services.AddScoped<OrderRepository>();  // ← add if needed
+builder.Services.AddScoped<OrderService>();
 // Services
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
