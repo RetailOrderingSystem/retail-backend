@@ -15,6 +15,7 @@ namespace RetailAPI.Services
     {
         Task<string> RegisterAsync(RegisterDto dto);
         Task<string> VerifyEmailAsync(string email, string token);
+        Task<object> GetUserByIdAsync(int userId);
         Task<string> LoginAsync(LoginDto dto);
         Task<AuthTokenResult> VerifyOtpAsync(VerifyOtpDto dto, string? ipAddress, string? userAgent);
     }
@@ -116,6 +117,22 @@ namespace RetailAPI.Services
             return "Registration successful. Please verify your email.";
         }
 
+        public async Task<object> GetUserByIdAsync(int userId)
+        {
+            var user = await _userRepository.GetByIdAsync(userId)
+                ?? throw new InvalidOperationException("User not found.");
+
+            return new
+            {
+                user.UserId,
+                user.FullName,
+                user.Email,
+                user.Phone,
+                user.IsEmailVerified,
+                user.CreatedAt,
+                RoleName = user.Role?.RoleName
+            };
+        }
         public async Task<string> VerifyEmailAsync(string email, string token)
         {
             if (string.IsNullOrWhiteSpace(token))
